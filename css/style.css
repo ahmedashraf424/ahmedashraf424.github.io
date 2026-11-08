@@ -139,6 +139,7 @@ figure { margin: 0 0 2rem; }
 figcaption { margin-top: .5rem; font-size: .95rem; }
 
    #skills {
-    background: #FAF6F0;
-    padding: 1rem;
+    background: #F1E9DD;
+  padding: 1rem;
+  border-radius: 12px;
 }
