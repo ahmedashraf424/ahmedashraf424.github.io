@@ -1,4 +1,4 @@
-/* ===== 1. Variables: one place for all colors ===== */
+
 :root {
   --bg: #FAF6F0;
   --card: #F1E9DD;
@@ -9,7 +9,7 @@
   --radius: 12px;
 }
 
-/* ===== 2. Base: box model, fonts, colors ===== */
+
 *, *::before, *::after { box-sizing: border-box; }
 body {
   margin: 0;
@@ -34,7 +34,7 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 a:focus-visible, .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 img { max-width: 100%; height: auto; }
 
-/* ===== 3. Header and navbar (sticky positioning) ===== */
+
 .site-header {
   position: sticky;
   top: 0;
@@ -46,7 +46,7 @@ img { max-width: 100%; height: auto; }
 .nav-link { color: var(--text); padding: .5rem 1rem; }
 .nav-link:hover, .nav-link.active { color: var(--accent); }
 
-/* ===== 4. Hero section (Flexbox) ===== */
+
 .hero {
   display: flex;
   align-items: center;
@@ -64,13 +64,12 @@ img { max-width: 100%; height: auto; }
   border: 6px solid var(--card);
 }
 
-/* ===== 5. Buttons (own colors on top of Bootstrap) ===== */
 .btn-brown { background: var(--accent); color: #fff; border: 2px solid var(--accent); }
 .btn-brown:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; }
 .btn-outline-brown { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
 .btn-outline-brown:hover { background: var(--accent); color: #fff; }
 
-/* ===== 6. Cards ===== */
+
 .card {
   background: var(--card);
   border: 1px solid var(--line);
@@ -79,7 +78,7 @@ img { max-width: 100%; height: auto; }
 }
 .card h3 { margin-top: 0; font-size: 1.2rem; }
 
-/* ===== 7. Page layout (Grid): article + aside ===== */
+
 .page-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -94,8 +93,7 @@ aside {
   padding: 1.25rem 1.5rem;
 }
 aside h2 { margin-top: 0; font-size: 1.3rem; }
-
-/* ===== 8. Tables ===== */
+ 
 .table-wrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
 caption { caption-side: top; font-weight: bold; padding-bottom: .5rem; text-align: start; }
@@ -104,7 +102,7 @@ thead th { background: var(--accent); color: #fff; text-align: center; }
 tbody th { background: var(--card); }
 tbody tr:hover td { background: var(--line); }
 
-/* ===== 9. Footer ===== */
+
 footer {
   margin-top: 3rem;
   padding: 1.5rem 0;
@@ -115,25 +113,25 @@ footer {
 footer p { margin: .25rem 0; }
 footer a { color: var(--line); }
 
-/* ===== 10. Responsive: phones and small tablets ===== */
+
 @media (max-width: 768px) {
   .hero { flex-direction: column-reverse; text-align: center; padding-block: 2rem; }
   .hero-img { width: 200px; height: 200px; }
   .page-grid { grid-template-columns: 1fr; }
 }
 
-/* ===== 11. Projects: Grid of cards + tag pills (Flexbox) ===== */
+
 .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
 .tags { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin: 1rem 0 0; }
 .tags li { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: .1rem .75rem; font-size: .9rem; }
 
-/* ===== 12. Forms ===== */
+
 .form-control:focus, .form-select:focus, .form-check-input:focus { border-color: var(--accent); box-shadow: 0 0 0 .2rem rgba(139, 94, 60, .25); }
 .form-check-input:checked { background-color: var(--accent); border-color: var(--accent); }
 fieldset { border: 1px solid var(--line); border-radius: var(--radius); padding: .75rem 1rem; }
 legend { float: none; width: auto; padding: 0 .5rem; }
 
-/* ===== 13. Media: video and audio ===== */
+
 video, audio { display: block; width: 100%; border-radius: var(--radius); }
 figure { margin: 0 0 2rem; }
 figcaption { margin-top: .5rem; font-size: .95rem; }
